@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    /* max-width: 100%; */
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    max-height: 100%;
+    /* max-width: 100%; */
+    background: black;
+}
+
+/* removing formatting from links */
+a {
+    text-decoration: none;
+}
+
+/* h1 {
+    text-align: center;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    /* margin: 50px 0 50px; */
+    /* transition: all 0.15s ease-in-out; */
+/* } */
+
+#menu-title__home {
+    /* text-align: center; */
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    /* margin: 50px 0 50px; */
+    transition: all 0.15s ease-in-out;
+}
+
+#menu-title__home:hover,
+#menu-title__home:active {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.719);
+}
+
+
+#menu-title__landscapes {
+    /* text-align: center; */
+    font-weight: 700;
+    color: rgba(255, 255, 255, .8);
+    /* margin: 50px 0 50px; */
+    transition: all 0.15s ease-in-out;
+}
+
+#menu-title__portraits {
+    /* text-align: center; */
+    font-weight: 700;
+    color: rgba(255, 255, 255, .8);
+    /* margin: 50px 0 50px; */
+    transition: all 0.15s ease-in-out;
+}
+
+#menu-title__blog {
+    text-align: center;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .8);
+    /* margin: 50px 0 50px; */
+    transition: all 0.15s ease-in-out;
+}
+
+.menu-titles h1:hover,
+.menu-titles h1:active {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.719);
+}
+
+/* a h1 {
+    font-weight: 700 !important;
+} */
+
+
+/* h1:hover {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.719);
+} */
+
+
+
+/* TOOLBAR */
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    background: black;
+    height: 56px;
+    z-index: 2;
+}
+
+.toolbar__toggle-button {
+  color: #ffffff;
+}
+
+.toolbar_navigation {
+    justify-content: space-between;
+    background-color: black;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+    transition: all 0.15s ease-in-out;
+    z-index: 2;
+}
+
+/* .toolbar_navigation:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px .5px rgba(80, 80, 80, 0.4);
+} */
+
+/* .toolbar_logo { */
+    /* margin-left: 1rem; */
+/* } */
+
+.toolbar_logo a {
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* margin: 40px 40px; */
+}
+
+.toolbar_logo a img {
+    height: 50%;
+    /* width: 50%; */
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar_navigation-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar_navigation-items li {
+    padding: 0 0.5rem;
+}
+
+/* MEDIA QUERIES */
+  @media (max-width: 768px) { /*768*/
+    .toolbar_navigation-items {
+        display: none;
+    }
+}
+@media (min-width: 769px) { /*769*/
+    .toolbar__toggle-button {
+        display: none;
+    }
+
+    .toolbar_logo {
+        margin: 0;
+    }
+}
+
+
+/* BODY */
+
+.blog__feed {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 5%;
+    top: 50px;
+}
+.blog-post {
+    margin: 0;
+    padding: 16px 0px 16px 16px;
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    list-style: none;
+    font-size: 24px;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: white;
+}
+
+.blog-post__date {
+    text-align: left;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-post__title {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-post__description {
+    margin: 0;
+    padding: 10px 0px;
+    font-weight: 200;
+}
+
+/* FOOTER */
+.main-footer {
+    background: transparent;
+    /* border-top: 1px solid grey; */
+    margin: 0;
+    padding-top: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.main-footer__links {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.main-footer__link {
+    margin: 0 16px;
+    font-size: 14px;
+}
+
+.main-footer__link a {
+    color: grey;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: rgba(255, 255, 255, 0.87);
+}
